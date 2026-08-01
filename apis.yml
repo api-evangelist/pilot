@@ -1,8 +1,26 @@
 aid: pilot
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pilot.png
 name: Pilot
-description: 'Pilot is a company surfaced as a portfolio company of crv, foundry-group, index-ventures,
-  sv-angel, techstars, union-square-ventures and added to the API Evangelist network as a stub for enrichment.
-  Sector: fintech. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Pilot provides bookkeeping, tax, and CFO services for startups and small
+  businesses, pairing purpose-built financial software with a team of finance experts
+  and former operators. Its offerings include monthly bookkeeping, corporate tax preparation
+  and filing, R&D tax credit studies, fractional CFO and COO support, and stock administration.
+  Pilot serves venture-backed startups and growing SMBs, integrating with accounting
+  and payroll tools to deliver accurate books and financial reporting. Pilot is backed
+  by CRV, Foundry Group, Index Ventures, SV Angel, Techstars, and Union Square Ventures.
+  As of this profile Pilot does not publish a public developer API or developer portal;
+  its product is delivered as a managed service through its web application.'
 url: https://raw.githubusercontent.com/api-evangelist/pilot/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -17,10 +35,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Fintech
+- Accounting
+- Bookkeeping
+- Tax
+- CFO Services
+- Startups
+- Finance
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -28,5 +52,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/pilot-domain-security.yml
 - type: Website
   url: https://pilot.com/
+- type: Pricing
+  url: https://pilot.com/pricing
+- type: Blog
+  url: https://pilot.com/blog
+- type: Support
+  url: https://pilot.com/faq
+- type: Login
+  url: https://app.pilot.com/login/
+- type: SignUp
+  url: https://pilot.com/free-trial
+- type: TermsOfService
+  url: https://pilot.com/terms/terms-of-use
+- type: PrivacyPolicy
+  url: https://pilot.com/terms/privacy
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
